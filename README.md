@@ -10,12 +10,11 @@ Wir sind hier drin.
 <img width="794" height="57" alt="grafik" src="https://github.com/user-attachments/assets/993f9071-7e9c-41c7-bd08-69b2e516bb87" />
 <img width="1234" height="411" alt="grafik" src="https://github.com/user-attachments/assets/c7dba8f8-767b-489d-ab31-e8eea5fd98a7" />
 
+3. Wenden Sie alle in der Lerneinheit genannten relevanten Methoden beweisbar an: (das Github Repo ist Beweis) push, pull, add, commit, diff, status, rm/mv, etc.
 
+<img width="896" height="516" alt="grafik" src="https://github.com/user-attachments/assets/2cc216f7-8e31-4c4a-9260-453ee8364bf1" />
+<img width="682" height="298" alt="grafik" src="https://github.com/user-attachments/assets/13ea97ac-d269-457f-9a33-1c0cd9f26a05" />
 
-
-
-
-    3. Wenden Sie alle in der Lerneinheit genannten relevanten Methoden beweisbar an: (das Github Repo ist Beweis) push, pull, add, commit, diff, status, rm/mv, etc.
     4. Experimentieren Sie mit Zeitreisen!
     5. Erstellen Sie zwei unterschiedliche aber ähnliche Branches, wechseln Sie hin und her und mergen sie diese Branches dann wieder!
     6. Erstellen Sie in GitHub einen Pull-Request bezugnehmend auf https://github.com/edlich/education! (was kleines, nützliches, witziges, etc., aber nicht via Shell, sondern via GitHub click!)
