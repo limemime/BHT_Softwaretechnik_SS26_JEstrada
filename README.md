@@ -13,6 +13,7 @@ Wir sind hier drin.
 3. Wenden Sie alle in der Lerneinheit genannten relevanten Methoden beweisbar an: (das Github Repo ist Beweis) push, pull, add, commit, diff, status, rm/mv, etc.
 
 <img width="896" height="516" alt="grafik" src="https://github.com/user-attachments/assets/2cc216f7-8e31-4c4a-9260-453ee8364bf1" />
+<img width="682" height="298" alt="grafik" src="https://github.com/user-attachments/assets/13ea97ac-d269-457f-9a33-1c0cd9f26a05" />
 
     4. Experimentieren Sie mit Zeitreisen!
     5. Erstellen Sie zwei unterschiedliche aber ähnliche Branches, wechseln Sie hin und her und mergen sie diese Branches dann wieder!
