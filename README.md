@@ -14,8 +14,14 @@ Wir sind hier drin.
 
 <img width="896" height="516" alt="grafik" src="https://github.com/user-attachments/assets/2cc216f7-8e31-4c4a-9260-453ee8364bf1" />
 <img width="682" height="298" alt="grafik" src="https://github.com/user-attachments/assets/13ea97ac-d269-457f-9a33-1c0cd9f26a05" />
+<img width="809" height="42" alt="grafik" src="https://github.com/user-attachments/assets/dda3e4ef-7d0f-4b4f-91a1-2a78f95ba2fc" />
+<img width="961" height="32" alt="grafik" src="https://github.com/user-attachments/assets/e64a6203-79ad-4178-bdac-2c66ecf79b9a" />
+<img width="764" height="72" alt="grafik" src="https://github.com/user-attachments/assets/daf83718-3381-402c-8f1f-c36aba230a1f" />
 
     4. Experimentieren Sie mit Zeitreisen!
+
+<img width="1021" height="143" alt="grafik" src="https://github.com/user-attachments/assets/2e6d3bea-d3c1-47db-8bc4-125c856b7bd2" />
+
     5. Erstellen Sie zwei unterschiedliche aber ähnliche Branches, wechseln Sie hin und her und mergen sie diese Branches dann wieder!
     6. Erstellen Sie in GitHub einen Pull-Request bezugnehmend auf https://github.com/edlich/education! (was kleines, nützliches, witziges, etc., aber nicht via Shell, sondern via GitHub click!)
 
