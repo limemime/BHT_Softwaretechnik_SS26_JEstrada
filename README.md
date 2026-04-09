@@ -35,5 +35,6 @@ Wir sind hier drin.
 Zuerst Habe ich einen neuen Zweig kreiert und einen Änderung "commited": Dann in Github:
 <img width="1862" height="570" alt="grafik" src="https://github.com/user-attachments/assets/9d594ac0-e971-440a-a605-0fd9803b793d" />
 
+<img width="945" height="327" alt="grafik" src="https://github.com/user-attachments/assets/1ed6a64b-8a49-4636-86f8-3926d64f9887" />
 
 Bitte referenzieren Sie auf den Pull-Request mit Link oder der Pull-Request-Nummer! Kryptische GitHub-Namen können kaum zugeordnet werden. 
