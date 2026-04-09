@@ -28,6 +28,8 @@ Wir sind hier drin.
     5. Erstellen Sie zwei unterschiedliche aber ähnliche Branches, wechseln Sie hin und her und mergen sie diese Branches dann wieder!
 <img width="739" height="242" alt="grafik" src="https://github.com/user-attachments/assets/052da42c-e20c-44d4-bf44-eb1f30f9a13f" />
 
+<img width="719" height="138" alt="grafik" src="https://github.com/user-attachments/assets/da070351-159c-453a-a7eb-25f0042fc449" />
+
 
     6. Erstellen Sie in GitHub einen Pull-Request bezugnehmend auf https://github.com/edlich/education! (was kleines, nützliches, witziges, etc., aber nicht via Shell, sondern via GitHub click!)
 
