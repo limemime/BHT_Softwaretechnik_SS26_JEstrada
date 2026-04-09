@@ -6,8 +6,12 @@ Wir sind hier drin.
 
 2. Pushen Sie ein eigenes Projekt von Ihnen hoch (z. B. das CCD-Projekt) oder erstellen Sie ein neues Projekt!
 
-<img width="1078" height="96" alt="grafik" src="https://github.com/user-attachments/assets/aa030e8f-4582-4e09-8ea1-e080317bf64c" />
-<img width="1222" height="139" alt="grafik" src="https://github.com/user-attachments/assets/46c16908-58d3-4de3-af96-4954a789ce30" />
+<img width="687" height="33" alt="grafik" src="https://github.com/user-attachments/assets/f6851569-bf21-440f-a1ac-1c4330adb5fd" />
+<img width="794" height="57" alt="grafik" src="https://github.com/user-attachments/assets/993f9071-7e9c-41c7-bd08-69b2e516bb87" />
+<img width="1234" height="411" alt="grafik" src="https://github.com/user-attachments/assets/c7dba8f8-767b-489d-ab31-e8eea5fd98a7" />
+
+
+
 
 
 
