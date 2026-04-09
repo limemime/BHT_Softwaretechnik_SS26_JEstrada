@@ -32,5 +32,8 @@ Wir sind hier drin.
 
 
     6. Erstellen Sie in GitHub einen Pull-Request bezugnehmend auf https://github.com/edlich/education! (was kleines, nützliches, witziges, etc., aber nicht via Shell, sondern via GitHub click!)
+Zuerst Habe ich einen neuen Zweig kreiert und einen Änderung "commited": Dann in Github:
+<img width="1862" height="570" alt="grafik" src="https://github.com/user-attachments/assets/9d594ac0-e971-440a-a605-0fd9803b793d" />
+
 
 Bitte referenzieren Sie auf den Pull-Request mit Link oder der Pull-Request-Nummer! Kryptische GitHub-Namen können kaum zugeordnet werden. 
