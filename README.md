@@ -21,8 +21,14 @@ Wir sind hier drin.
     4. Experimentieren Sie mit Zeitreisen!
 
 <img width="1021" height="143" alt="grafik" src="https://github.com/user-attachments/assets/2e6d3bea-d3c1-47db-8bc4-125c856b7bd2" />
+<img width="1151" height="85" alt="grafik" src="https://github.com/user-attachments/assets/66650c2c-9189-4399-acba-0cbe5e15096a" />
+<img width="1288" height="484" alt="grafik" src="https://github.com/user-attachments/assets/ea3001da-d1a8-46ef-b49e-6df014f5ad2c" />
+<img width="848" height="432" alt="grafik" src="https://github.com/user-attachments/assets/750b5d63-4b3f-4903-800d-38990aa9e3f5" />
 
     5. Erstellen Sie zwei unterschiedliche aber ähnliche Branches, wechseln Sie hin und her und mergen sie diese Branches dann wieder!
+<img width="739" height="242" alt="grafik" src="https://github.com/user-attachments/assets/052da42c-e20c-44d4-bf44-eb1f30f9a13f" />
+
+
     6. Erstellen Sie in GitHub einen Pull-Request bezugnehmend auf https://github.com/edlich/education! (was kleines, nützliches, witziges, etc., aber nicht via Shell, sondern via GitHub click!)
 
 Bitte referenzieren Sie auf den Pull-Request mit Link oder der Pull-Request-Nummer! Kryptische GitHub-Namen können kaum zugeordnet werden. 
