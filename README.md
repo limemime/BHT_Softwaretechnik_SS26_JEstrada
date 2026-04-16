@@ -2,7 +2,7 @@
 
 1. Erstellen Sie sich ein Repository in Github oder GitLab.
 
-Wir sind hier drin.
+Wir sind hier drin oder man konte Befehl: "git clone [URL von repository]" benutzen. 
 
 2. Pushen Sie ein eigenes Projekt von Ihnen hoch (z. B. das CCD-Projekt) oder erstellen Sie ein neues Projekt!
 
