@@ -35,13 +35,16 @@ Eine kleine Screenshot vom code:
 Für diese Aufgabe habe ich mein Prompt weiter detailliert und dies hinzugefügt: "Bearing all the previous specifications in mind, I want to start with a prototype that has only the core functionality: an engine that looks for arbitrary words in a dictionary with 100 different key words and then uses them to send searches according to the abovementioned pace. You can propose a dictionary with 100 entries to search in a .txt file. This code should be as minimalistic as possible"
 
 Sowohl das Programm von Antigravit als auch das Programm aus Gemini CLI sind in diesem Ordner und können ausgeführt werden. 
-Ich erhielt mehrere review Fragen: 
+
+In Antigravity bekommt man mehrere review Fragen, bevor das Code geschireben wird.  
 
 <img width="1510" height="659" alt="grafik" src="https://github.com/user-attachments/assets/09941ad4-f5b2-4b14-bd69-24962a16de2f" />
 
 und ein plan: 
 <img width="800" height="451" alt="grafik" src="https://github.com/user-attachments/assets/d80f6913-929c-498b-bb3d-8efd4b82aa09" />
 
+Damit ich das ganze Code verstehen kann, habe ich auch die KI nach Kommentare gefragt. Jede Linie wird erklärt:
+<img width="730" height="408" alt="grafik" src="https://github.com/user-attachments/assets/4a66cb5d-5a11-4dcc-804e-994f2c38ffa9" />
 
 
 Die variante mit Gemini CLI wird mit Screenshots dargestellt:
