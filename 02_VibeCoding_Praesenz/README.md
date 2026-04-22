@@ -36,10 +36,10 @@ Für diese Aufgabe habe ich mein Prompt weiter detailliert und dies hinzugefügt
 
 Ich erhielt mehrere review Fragen: 
 
-<img width="1910" height="959" alt="grafik" src="https://github.com/user-attachments/assets/09941ad4-f5b2-4b14-bd69-24962a16de2f" />
+<img width="1510" height="659" alt="grafik" src="https://github.com/user-attachments/assets/09941ad4-f5b2-4b14-bd69-24962a16de2f" />
 
 und ein plan: 
-<img width="1131" height="751" alt="grafik" src="https://github.com/user-attachments/assets/d80f6913-929c-498b-bb3d-8efd4b82aa09" />
+<img width="800" height="451" alt="grafik" src="https://github.com/user-attachments/assets/d80f6913-929c-498b-bb3d-8efd4b82aa09" />
 
 
 
