@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Entropy Engine</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+            text-align: center;
+            width: 400px;
+        }
+        h1 {
+            color: #00ff88;
+            margin-bottom: 0.5rem;
+        }
+        p {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        .status-box {
+            margin: 2rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: #252525;
+            font-size: 1.2rem;
+        }
+        .status-value {
+            font-weight: bold;
+            color: #ff4444;
+        }
+        .status-value.running {
+            color: #00ff88;
+        }
+        button {
+            background-color: #00ff88;
+            color: #000;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: transform 0.1s, background-color 0.2s;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #00cc6e;
+        }
+        button:active {
+            transform: scale(0.98);
+        }
+        button.stop {
+            background-color: #ff4444;
+            color: #fff;
+        }
+        button.stop:hover {
+            background-color: #cc3333;
+        }
+        .stats {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Semantic Entropy Engine</h1>
+        <p>Local Character Profile Generator</p>
+        
+        <div class="status-box">
+            Status: <span id="status" class="status-value">Stopped</span>
+        </div>
+
+        <button id="toggleBtn" onclick="toggleEngine()">Start Engine</button>
+
+        <div class="stats">
+            Searches conducted: <span id="searchCount">0</span>
+        </div>
+    </div>
+
+    <script>
+        function updateStatus() {
+            fetch('/status')
+                .then(response => response.json())
+                .then(data => {
+                    const statusEl = document.getElementById('status');
+                    const btn = document.getElementById('toggleBtn');
+                    const countEl = document.getElementById('searchCount');
+                    
+                    statusEl.innerText = data.status;
+                    countEl.innerText = data.count;
+                    
+                    if (data.status === 'Running') {
+                        statusEl.classList.add('running');
+                        btn.innerText = 'Stop Engine';
+                        btn.classList.add('stop');
+                    } else {
+                        statusEl.classList.remove('running');
+                        btn.innerText = 'Start Engine';
+                        btn.classList.remove('stop');
+                    }
+                });
+        }
+
+        function toggleEngine() {
+            fetch('/toggle', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    updateStatus();
+                });
+        }
+
+        // Poll status every 2 seconds
+        setInterval(updateStatus, 2000);
+        updateStatus();
+    </script>
+</body>
+</html>
