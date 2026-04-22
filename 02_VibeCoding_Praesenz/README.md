@@ -21,6 +21,11 @@ Ich habe das gleiche Projekt benutzt, aber diesmal habe ich in der Prompt weiter
 Ich habe auch Fragen von der KI erhalten:
 <img width="945" height="379" alt="grafik" src="https://github.com/user-attachments/assets/49550e7a-835c-421e-b2b4-a746b2cf45f3" />
 
+Das ganze Code und Projekt, das Lovable hergestellt hat, ist hier:
+https://github.com/limemime/semantic-drift-engine
+
+c) Developing a bigger distributed app. Using CLI and A Vsisual Studio Code clone. 
+
  
 
 
