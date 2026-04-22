@@ -27,13 +27,14 @@ Das ganze Code und Projekt, das Lovable hergestellt hat, ist hier:
 https://github.com/limemime/semantic-drift-engine
 
 Eine kleine Screenshot vom code: 
-<img width="1310" height="769" alt="grafik" src="https://github.com/user-attachments/assets/6717440b-6c27-4056-bc7e-09c1dee9428d" />
+<img width="1110" height="569" alt="grafik" src="https://github.com/user-attachments/assets/6717440b-6c27-4056-bc7e-09c1dee9428d" />
 
 
 --------------c) Developing a bigger distributed app. Using CLI and A Vsisual Studio Code clone. --------------------
 
 Für diese Aufgabe habe ich mein Prompt weiter detailliert und dies hinzugefügt: "Bearing all the previous specifications in mind, I want to start with a prototype that has only the core functionality: an engine that looks for arbitrary words in a dictionary with 100 different key words and then uses them to send searches according to the abovementioned pace. You can propose a dictionary with 100 entries to search in a .txt file. This code should be as minimalistic as possible"
 
+Sowohl das Programm von Antigravit als auch das Programm aus Gemini CLI sind in diesem Ordner und können ausgeführt werden. 
 Ich erhielt mehrere review Fragen: 
 
 <img width="1510" height="659" alt="grafik" src="https://github.com/user-attachments/assets/09941ad4-f5b2-4b14-bd69-24962a16de2f" />
@@ -41,6 +42,16 @@ Ich erhielt mehrere review Fragen:
 und ein plan: 
 <img width="800" height="451" alt="grafik" src="https://github.com/user-attachments/assets/d80f6913-929c-498b-bb3d-8efd4b82aa09" />
 
+
+
+Die variante mit Gemini CLI wird mit Screenshots dargestellt:
+
+<img width="720" height="771" alt="grafik" src="https://github.com/user-attachments/assets/ce5a81ab-b701-408b-af14-581483d716f5" />
+
+Und die CLI Gemini pasuiert und macht fragen:
+<img width="664" height="618" alt="grafik" src="https://github.com/user-attachments/assets/c879ef7f-432f-4155-a82b-c2d29686a77f" />
+
+<img width="748" height="799" alt="grafik" src="https://github.com/user-attachments/assets/bc902259-178f-4723-b3e5-caf663e35c68" />
 
 
 
