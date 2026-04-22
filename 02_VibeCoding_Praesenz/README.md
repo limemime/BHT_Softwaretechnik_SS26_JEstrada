@@ -32,6 +32,18 @@ Eine kleine Screenshot vom code:
 
 --------------c) Developing a bigger distributed app. Using CLI and A Vsisual Studio Code clone. --------------------
 
+Für diese Aufgabe habe ich mein Prompt weiter detailliert und dies hinzugefügt: "Bearing all the previous specifications in mind, I want to start with a prototype that has only the core functionality: an engine that looks for arbitrary words in a dictionary with 100 different key words and then uses them to send searches according to the abovementioned pace. You can propose a dictionary with 100 entries to search in a .txt file. This code should be as minimalistic as possible"
+
+Ich erhielt mehrere review Fragen: 
+
+<img width="1910" height="959" alt="grafik" src="https://github.com/user-attachments/assets/09941ad4-f5b2-4b14-bd69-24962a16de2f" />
+
+und ein plan: 
+<img width="1131" height="751" alt="grafik" src="https://github.com/user-attachments/assets/d80f6913-929c-498b-bb3d-8efd4b82aa09" />
+
+
+
+
 
 
  
