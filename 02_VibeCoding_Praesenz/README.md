@@ -1,6 +1,6 @@
 Aufgaben 
 
-a) Create / Vibe a GUI for a proejct idea
+---------------a) Create / Vibe a GUI for a proejct idea------------------------
 
 Ich habe Google Stitch benutzt. Meine Idee war, eine App zu entwickeln, die die individuellen Daten und Privatsphäre schützt, indem es Google oder Amazon erschwert, ein Charakterprofil aus Internetsuchen zu erstellen. Es handelt sich um eine Art Brute-Force-Poisoning. Mein Prompt war Folgendes:
 
@@ -12,7 +12,9 @@ Das Dashboard sieh so aus:
 
 Und ein Teil das code ist: <img width="1580" height="616" alt="grafik" src="https://github.com/user-attachments/assets/ab2b07dd-1121-40e6-a180-b3710250c5f0" />
 
-b) Vibe a bigger / Mid-size project:
+
+
+-----------------b) Vibe a bigger / Mid-size project:-------------------
 
 Ich habe das gleiche Projekt benutzt, aber diesmal habe ich in der Prompt weitere Details und Kernfunktionen hinzugefügt. Für diese Aufgabe habe ich Lovable benutzt und der Prompt ist Folgendes:
 
@@ -24,7 +26,13 @@ Ich habe auch Fragen von der KI erhalten:
 Das ganze Code und Projekt, das Lovable hergestellt hat, ist hier:
 https://github.com/limemime/semantic-drift-engine
 
-c) Developing a bigger distributed app. Using CLI and A Vsisual Studio Code clone. 
+Eine kleine Screenshot vom code: 
+<img width="1310" height="769" alt="grafik" src="https://github.com/user-attachments/assets/6717440b-6c27-4056-bc7e-09c1dee9428d" />
+
+
+--------------c) Developing a bigger distributed app. Using CLI and A Vsisual Studio Code clone. --------------------
+
+
 
  
 
