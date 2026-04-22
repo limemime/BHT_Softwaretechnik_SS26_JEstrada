@@ -34,7 +34,7 @@ Eine kleine Screenshot vom code:
 
 Für diese Aufgabe habe ich mein Prompt weiter detailliert und dies hinzugefügt: "Bearing all the previous specifications in mind, I want to start with a prototype that has only the core functionality: an engine that looks for arbitrary words in a dictionary with 100 different key words and then uses them to send searches according to the abovementioned pace. You can propose a dictionary with 100 entries to search in a .txt file. This code should be as minimalistic as possible"
 
-Sowohl das Programm von Antigravit (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Antigravity) als auch das Programm aus Gemini CLI sind in diesem Ordner und können ausgeführt werden. 
+Sowohl das Programm von Antigravit (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Antigravity) als auch das Programm aus Gemini CLI (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Gemini_CLI) sind in Unterordner und können ausgeführt werden. Eine Verbesserung wäere, wenn die Suchen immer im gliechen tab ausgeführt werden könnten. Das ist für die nächste Iteration. 
 
 In Antigravity bekommt man mehrere Review-Fragen, bevor das Code geschrieben wird.  
 
