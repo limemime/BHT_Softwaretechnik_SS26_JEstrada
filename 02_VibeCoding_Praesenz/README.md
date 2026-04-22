@@ -36,7 +36,7 @@ Für diese Aufgabe habe ich mein Prompt weiter detailliert und dies hinzugefügt
 
 Sowohl das Programm von Antigravit (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Antigravity) als auch das Programm aus Gemini CLI sind in diesem Ordner und können ausgeführt werden. 
 
-In Antigravity bekommt man mehrere review Fragen, bevor das Code geschireben wird.  
+In Antigravity bekommt man mehrere Review-Fragen, bevor das Code geschrieben wird.  
 
 <img width="1510" height="659" alt="grafik" src="https://github.com/user-attachments/assets/09941ad4-f5b2-4b14-bd69-24962a16de2f" />
 
