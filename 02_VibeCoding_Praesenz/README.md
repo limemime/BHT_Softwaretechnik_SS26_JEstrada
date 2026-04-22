@@ -8,9 +8,10 @@ Ich habe Google Stitch benutzt. Meine Idee war, eine App zu entwickeln, die die 
 
 Das Dashboard sieh so aus:
 
-<img width="300" height="1600" alt="screen" src="https://github.com/user-attachments/assets/e5945ef6-df50-4e24-97f8-b0feae47ad30" />
+<img width="1902" height="827" alt="grafik" src="https://github.com/user-attachments/assets/ce3c74b6-157c-42aa-9013-00b68f34d11b" />
+
+Und ein Teil das code ist: <img width="1580" height="616" alt="grafik" src="https://github.com/user-attachments/assets/ab2b07dd-1121-40e6-a180-b3710250c5f0" />
 
 
-<img width="278" height="1600" alt="screen_2" src="https://github.com/user-attachments/assets/1e1aad0e-0a92-4419-8ea2-cb4b2fdda7ff" />
 
 
