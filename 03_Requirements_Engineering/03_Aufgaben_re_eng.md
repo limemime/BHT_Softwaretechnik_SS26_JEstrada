@@ -1,5 +1,5 @@
 
-A) Ich habe Trello benuntzt und Listen mit Attributen für 5 Requirements gemacht. Ich war am Anfang ein bisschenv verwwirt und deshalb gibt es in mein Borad auch Teile für die Analyse. Mann kann sich das Borad unter folgendem Link ansehen: 
+A) Ich habe Trello benuntzt und Listen mit Attributen für 5 Requirements gemacht. Ich war am Anfang ein bisschen verwwirt und deshalb gibt es in mein Board auch Teile für die Analyse. Mann kann sich das Borad unter folgendem Link ansehen: 
 https://trello.com/invite/b/69e9e33ffe939a03f9c13ea7/ATTI9354f21a4296dbc602188c8274f1709cCE1A1A2C/identity-entropy
 
 Hier ein screenshot dazu:
