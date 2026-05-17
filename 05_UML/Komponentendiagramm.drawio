@@ -1,9 +1,41 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Seite-1" id="jTFxh6Qrq9Mi9ZtBo7Fn">
-    <mxGraphModel>
+    <mxGraphModel dx="774" dy="391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="IePyuq7m5LHr5yX9b8xW-1" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="«component»&lt;br&gt;&lt;b&gt;Identity Entropy Engine&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="50" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IePyuq7m5LHr5yX9b8xW-2" parent="IePyuq7m5LHr5yX9b8xW-1" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IePyuq7m5LHr5yX9b8xW-3" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="«component»&lt;br&gt;&lt;b&gt;Dashboard mit Metrics&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="280" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="IePyuq7m5LHr5yX9b8xW-4" parent="IePyuq7m5LHr5yX9b8xW-3" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IePyuq7m5LHr5yX9b8xW-5" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&lt;div&gt;«component»&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Browser&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="280" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="IePyuq7m5LHr5yX9b8xW-6" parent="IePyuq7m5LHr5yX9b8xW-5" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IePyuq7m5LHr5yX9b8xW-7" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="«component»&lt;br&gt;&lt;b&gt;Datenbank&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="50" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="IePyuq7m5LHr5yX9b8xW-8" parent="IePyuq7m5LHr5yX9b8xW-7" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
