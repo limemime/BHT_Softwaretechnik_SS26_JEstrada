@@ -20,4 +20,67 @@
 
 # TEIL B
 
-Versuchen sie zusätzlich Diagramme mit einer AI als Text-First erstellen zu lassen. Diese sollten dann mit den Live-Viewern anzeigen (z. B. TextUML oder mermaid.live). Dabei geht es darum, die Interaktion mit der GenAI besser zu verstehen.
+
+
+Ich habe zwei Diagramme mit KI generiert. Zuert habe ich Lumo nach eine Paketdiagrammestruktur meiner Projekt gefragt. Der Kontext stammt aus den vorherigen ESAs. Danach habe ich die Ergebnisse i eraser.io eingegeben
+
+## Erstes Beispiel
+: Make A package diagramm with this: packageDiagram
+    package "EntropySearchEngine" {
+        package "Core" {
+            package "DictionaryManager" {
+                class "WordListLoader"
+                class "TermSelector"
+                class "ContextGenerator"
+            }
+            package "EntropyEngine" {
+                class "RandomizationStrategy"
+                class "RhythmController"
+                class "SearchScheduler"
+                interface "ISearchExecutor"
+            }
+        }
+
+        package "Automation" {
+            package "BrowserAdapter" {
+                class "SeleniumWrapper"
+                class "PlaywrightWrapper"
+                class "HeadlessManager"
+            }
+            package "AntiDetection" {
+                class "FingerprintSpoofing"
+                class "BehavioralMimicry"
+                class "IPRotationHandler"
+            }
+        }
+
+        package "Presentation" {
+            package "Dashboard" {
+                class "MetricsView"
+                class "ControlPanel"
+                class "LogViewer"
+            }
+            package "Settings" {
+                class "RhythmConfig"
+                class "FrequencySlider"
+                class "ProfileManager"
+            }
+        }
+
+        package "Infrastructure" {
+            package "Security" {
+                class "DDoSProtection"
+                class "RateLimiter"
+                class "SafeGuard"
+            }
+            package "Persistence" {
+                class "LocalConfigStore"
+                class "SearchHistoryLog"
+            }
+        }
+    } 
+    <img width="1899" height="2181" alt="diagram-export-17 5 2026-22_16_44" src="https://github.com/user-attachments/assets/43f4076c-0d66-4ae6-b63a-c88170606738" />
+
+
+
+
