@@ -12,6 +12,9 @@
             <mxPoint x="95" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="O-hs-SJJYXdslM32jaHH-25" edge="1" parent="1" source="O-hs-SJJYXdslM32jaHH-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=light-dark(#FF3C12,#FFFFFF);" target="O-hs-SJJYXdslM32jaHH-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="O-hs-SJJYXdslM32jaHH-7" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Warten auf wort" vertex="1">
           <mxGeometry height="60" width="140" x="30" y="130" as="geometry" />
         </mxCell>
@@ -27,11 +30,11 @@
         <mxCell id="O-hs-SJJYXdslM32jaHH-11" parent="1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="8" width="140" x="310" y="156" as="geometry" />
         </mxCell>
-        <mxCell id="O-hs-SJJYXdslM32jaHH-12" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Warten für Suchfrenquenz" vertex="1">
-          <mxGeometry height="60" width="150" x="170" y="250" as="geometry" />
+        <mxCell id="O-hs-SJJYXdslM32jaHH-12" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=0;whiteSpace=wrap;" value="Warten wegen Suchfrenquenz" vertex="1">
+          <mxGeometry height="60" width="160" x="170" y="250" as="geometry" />
         </mxCell>
         <mxCell id="O-hs-SJJYXdslM32jaHH-13" parent="1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="150" x="170" y="276" as="geometry" />
+          <mxGeometry height="8" width="160" x="170" y="282" as="geometry" />
         </mxCell>
         <mxCell id="O-hs-SJJYXdslM32jaHH-17" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeColor=light-dark(#A8A8A8,#FFFFFF);" target="O-hs-SJJYXdslM32jaHH-10" value="zu Engine geben">
           <mxGeometry relative="1" width="80" as="geometry">
@@ -58,6 +61,12 @@
             <mxPoint x="225" y="210" as="sourcePoint" />
             <mxPoint x="130" y="270" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="O-hs-SJJYXdslM32jaHH-23" parent="1" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="85" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="O-hs-SJJYXdslM32jaHH-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="End" vertex="1">
+          <mxGeometry height="30" width="60" x="70" y="290" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
