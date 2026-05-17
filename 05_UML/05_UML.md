@@ -9,3 +9,7 @@
 
 ## Zustandsdiagramm
 <img width="425" height="441" alt="Use_Case_Diagramm_IEE" src="https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/blob/228c7866d551e07dfaa256e25ce756928a1feb6d/05_UML/Zustandsdiagramm.png" />
+
+## Komponentendiagramm
+
+<img width="425" height="441" alt="Use_Case_Diagramm_IEE" src="https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/blob/fd355558ea78e59c9fd7d1369a4d185b5235c0da/05_UML/Komponentendiagramm.png" />
