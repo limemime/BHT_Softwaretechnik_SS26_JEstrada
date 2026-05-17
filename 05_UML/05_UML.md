@@ -19,3 +19,5 @@
 <img width="425" height="441" alt="Use_Case_Diagramm_IEE" src="https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/blob/c4839b8da612c3f97ba3db25fb1731e5bbcea173/05_UML/Klassendiagramm.png" />
 
 # TEIL B
+
+Versuchen sie zusätzlich Diagramme mit einer AI als Text-First erstellen zu lassen. Diese sollten dann mit den Live-Viewern anzeigen (z. B. TextUML oder mermaid.live). Dabei geht es darum, die Interaktion mit der GenAI besser zu verstehen.
