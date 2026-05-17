@@ -22,10 +22,10 @@
 
 
 
-Ich habe zwei Diagramme mit KI generiert. Zuert habe ich Lumo nach eine Paketdiagrammestruktur meiner Projekt gefragt. Der Kontext stammt aus den vorherigen ESAs. Danach habe ich die Ergebnisse i eraser.io eingegeben
+Ich habe zwei Diagramme mit KI generiert. Zuert habe ich Lumo nach eine Paketdiagrammestruktur meiner Projekt gefragt. Der Kontext stammt aus den vorherigen ESAs. Danach habe ich die Ergebnisse in eraser.io eingegeben
 
 ## Erstes Beispiel
-: Make A package diagramm with this: packageDiagram
+Make a package diagramm with this: packageDiagram
     package "EntropySearchEngine" {
         package "Core" {
             package "DictionaryManager" {
@@ -84,7 +84,7 @@ Ich habe zwei Diagramme mit KI generiert. Zuert habe ich Lumo nach eine Paketdia
 <img width="1899" height="2181" alt="diagram-export-17 5 2026-22_16_44" src="https://github.com/user-attachments/assets/43f4076c-0d66-4ae6-b63a-c88170606738" />
 
 ## Zweites Beispile
-Hier habe ich auch Proton benutzt. EIn Beispiel von klassen Diagramme erstellen lassen und danach, habe ich die Text in mermaid eingegeben und auch nach Kardinalitäten und Aggregationen bzw. Kompositionen gefragt. Hier ist der link https://mermaid.ai/d/c4ab199f-e184-4af8-ab5a-df7d6d62e438
+Hier habe ich auch Proton benutzt, um ein Beispiel von klassendiagramm erstellen zu lassen. Danach habe ich die Text in mermaid eingegeben und auch nach Kardinalitäten und Aggregationen bzw. Kompositionen gefragt. Hier ist der link https://mermaid.ai/d/c4ab199f-e184-4af8-ab5a-df7d6d62e438
 
 
 <img width="958" height="871" alt="grafik" src="https://github.com/user-attachments/assets/cd35eba9-8d2b-4757-a731-55f1e541a886" />
