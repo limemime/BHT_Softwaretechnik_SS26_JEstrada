@@ -65,16 +65,16 @@
           <mxGeometry height="40" width="160" y="104" as="geometry" />
         </mxCell>
         <mxCell id="a9EOnSzaSXn5GIB0E-RL-22" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Browser" vertex="1">
-          <mxGeometry height="130" width="160" x="580" y="222" as="geometry" />
+          <mxGeometry height="120" width="160" x="580" y="222" as="geometry" />
         </mxCell>
         <mxCell id="a9EOnSzaSXn5GIB0E-RL-23" parent="a9EOnSzaSXn5GIB0E-RL-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ userAgent: String&lt;/div&gt;" vertex="1">
-          <mxGeometry height="44" width="160" y="26" as="geometry" />
+          <mxGeometry height="34" width="160" y="26" as="geometry" />
         </mxCell>
         <mxCell id="a9EOnSzaSXn5GIB0E-RL-24" parent="a9EOnSzaSXn5GIB0E-RL-22" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="160" y="70" as="geometry" />
+          <mxGeometry height="8" width="160" y="60" as="geometry" />
         </mxCell>
         <mxCell id="a9EOnSzaSXn5GIB0E-RL-25" parent="a9EOnSzaSXn5GIB0E-RL-22" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ open()&lt;/div&gt;&lt;div&gt;+ do_search(wort:string)&lt;/div&gt;&lt;div&gt;+closer()&lt;/div&gt;" vertex="1">
-          <mxGeometry height="52" width="160" y="78" as="geometry" />
+          <mxGeometry height="52" width="160" y="68" as="geometry" />
         </mxCell>
         <mxCell id="a9EOnSzaSXn5GIB0E-RL-26" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Suchfrequenz" vertex="1">
           <mxGeometry height="128" width="160" x="600" y="40" as="geometry" />
