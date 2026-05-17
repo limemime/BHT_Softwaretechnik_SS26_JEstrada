@@ -13,3 +13,7 @@
 ## Komponentendiagramm
 
 <img width="425" height="441" alt="Use_Case_Diagramm_IEE" src="https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/blob/fd355558ea78e59c9fd7d1369a4d185b5235c0da/05_UML/Komponentendiagramm.png" />
+
+## Klassendiagramm
+
+<img width="425" height="441" alt="Use_Case_Diagramm_IEE" src="https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/blob/c4839b8da612c3f97ba3db25fb1731e5bbcea173/05_UML/Klassendiagramm.png" />
