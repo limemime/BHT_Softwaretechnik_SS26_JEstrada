@@ -20,13 +20,13 @@
           <mxGeometry height="140" width="160" x="10" y="183" as="geometry" />
         </mxCell>
         <mxCell id="a9EOnSzaSXn5GIB0E-RL-6" parent="a9EOnSzaSXn5GIB0E-RL-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ Wöerterbuch: wörterbuch&lt;/div&gt;&lt;div&gt;+ Suchfrequenz: integer&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="54" width="160" y="26" as="geometry" />
+          <mxGeometry height="34" width="160" y="26" as="geometry" />
         </mxCell>
         <mxCell id="a9EOnSzaSXn5GIB0E-RL-7" parent="a9EOnSzaSXn5GIB0E-RL-5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="160" y="80" as="geometry" />
+          <mxGeometry height="8" width="160" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="a9EOnSzaSXn5GIB0E-RL-8" parent="a9EOnSzaSXn5GIB0E-RL-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ default()&lt;/div&gt;&lt;div&gt;+ load_config()&lt;/div&gt;&lt;div&gt;+ set_config()&lt;/div&gt;" vertex="1">
-          <mxGeometry height="52" width="160" y="88" as="geometry" />
+        <mxCell id="a9EOnSzaSXn5GIB0E-RL-8" parent="a9EOnSzaSXn5GIB0E-RL-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;div&gt;+ default()&lt;/div&gt;&lt;div&gt;+ load_config()&lt;/div&gt;&lt;div&gt;+ set_config()&lt;/div&gt;&lt;div&gt;+ parallel_engines()&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="160" y="68" as="geometry" />
         </mxCell>
         <mxCell id="a9EOnSzaSXn5GIB0E-RL-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Entropy Engine" vertex="1">
           <mxGeometry height="160" width="160" x="340" y="20" as="geometry" />
