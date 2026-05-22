@@ -1,7 +1,7 @@
 # Vorgehensmodelle
 
 ## 1)
-Ich habe mich für Scrum entschieden.
+Ich habe mich für Scrum und Zoho Sprint entschieden.
 ## 2)
 Ich habe herausgefunden, dass Jira und Confluence die berühmtesten und häufigst angewendeten Tools für Scrum sind. Es gibt aber zahlreiche Tools, die den Fokus auf einen bestimmten Schritt von der Scrum- oder agilen Entwicklung legen. Hierzu zählen Scrumwise, Zoho Sprints, Azure Boards,
 Asana, Wrike, Monday, Trello etc. Die letzten zwei sind auch für Kanban geeignet.
