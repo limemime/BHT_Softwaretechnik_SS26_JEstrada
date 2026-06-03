@@ -1,4 +1,5 @@
 # Buildmanagement
 
-Der erste Schritt ist ein Projekt zu erstellen:
-<img width="1561" height="939" alt="grafik" src="https://github.com/user-attachments/assets/cfcc18d2-25f8-4117-b88f-cfb6433e6b6d" />
+Der erste Schritt ist ein Projekt zu erstellt und vergessen ein build.xml zu erstellen, daher kriege ich diese Fehlermeldung:
+<img width="1346" height="295" alt="grafik" src="https://github.com/user-attachments/assets/f4ba28da-1ed8-4c26-afc0-0eb55ee8b5d3" />
+
