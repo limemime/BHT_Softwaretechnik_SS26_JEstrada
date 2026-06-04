@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'application'
 }
-
+// Falls man andere Dependencies und libraries benutzt, werden diese mit mavenCentral() aufgerufen 
 repositories {
     mavenCentral()
 }
