@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="Erstes" default="RUN" basedir=".">
+
+    <!--Ordner werden definiert-->
+    <property name="src.dir" value="src"/>
+    
+
+    <!--RUN--> 
+    <target name="RUN">
+        <echo message="Hello World"/>
+    </target>
+
+    <!--Leere Datei-->
+    <target name="LEDAT">
+        <echo message="Create File"/>
+        <touch file="test.txt"/>
+    </target>
+
+
+    <!-- Clean -->
+    <target name="CLEAN" depends="LEDAT">
+        <echo message="Erasing File"/>
+        <delete file="test.txt"/>
+    </target>
+
+     <!-- COMPILE -->
+    <target name="COMPILE">
+        <echo message="Compiling"/>
+        <javac srcdir="${src.dir}" destdir="."/>
+        <echo message="Compilation done!"/>
+    </target>
+  <!-- JAR -->
+    <target name="JAR" depends="COMPILE">
+        <echo message="Creating JAR file"/>
+        <jar destfile="HelloApp.jar" basedir=".">
+            <manifest>
+                <attribute name="Main-Class" value="HelloWorld"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="JRUN" depends="JAR">
+        <echo message="Java can run"/> 
+        <java jar="HelloApp.jar" fork="true"> <!--Fork für Kindprozess und Crash verhindern-->
+            <classpath>
+                <pathelement location="."/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name="CLEANJAV">
+        <delete file="HelloWorld.class"/>
+        <delete file="HelloApp.jar"/>
+    </target>
+
+
+    <target name="DOC">
+        <javadoc destdir="doc/" 
+             sourcepath="${src.dir}"
+             packagenames=""
+             sourcefiles="src/*.java" 
+             defaultexcludes="yes">
+        </javadoc>
+        <echo message="Documentation generated"/>
+    </target>
+
+
+    
+    
+</project>
