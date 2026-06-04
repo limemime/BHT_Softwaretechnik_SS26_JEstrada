@@ -54,6 +54,15 @@ Java docs:
 
 <img width="1327" height="640" alt="grafik" src="https://github.com/user-attachments/assets/49f3c074-2f41-4015-86e6-ebd097b6b112" />
 
+# Buildmanagement mit GRADLE
+kurzere Beispiel
+
+Die Hello World hat funktioniert:
+<img width="939" height="217" alt="grafik" src="https://github.com/user-attachments/assets/bc9384a0-3a55-4335-a282-c22cb5c32b2c" />
+
+
+<img width="1423" height="655" alt="grafik" src="https://github.com/user-attachments/assets/192a2985-8b3d-444d-a217-dc028fe5baf1" />
+
 
 
 
