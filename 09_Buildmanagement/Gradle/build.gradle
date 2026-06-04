@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'HelloWorld'
+}
+
+
+task hello {
+    println 'Hallo World'
+  }
+
+  task co {
+    print 'co'
+  }
+
+  task dependent(dependsOn: co) {
+    println 'dependent'
+  }
+
+// eigene Taks mit groovy
+
+tasks.register('CreateFile') {
+    doLast {
+        def file = new File(projectDir, 'test.txt')
+        file.text = 'Almost empty file'
+        println "Successfully created ${file.name}"
+    }
+}
