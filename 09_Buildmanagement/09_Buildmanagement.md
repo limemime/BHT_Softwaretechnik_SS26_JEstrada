@@ -32,7 +32,7 @@ Daher kriege ich diese Fehlermeldung:
 
 <img width="1302" height="421" alt="grafik" src="https://github.com/user-attachments/assets/b801e448-c2ba-401e-9a4b-319cee181cb4" />
 
-## 8 Noch ein Problem: die Pfad von .class fehlte.
+## 8 Noch ein Problem: die Pfad von .class fehlte und Classname war nkcht richtig.
 
 <img width="931" height="162" alt="grafik" src="https://github.com/user-attachments/assets/68793d64-462e-4881-acf8-2243d6437e53" />
 
