@@ -60,4 +60,58 @@ Die Date von der test und Programm sind im Unterordner hinzugefügt.
 
 # A2 TDD
 
-# A3 Mutation Testing
+# A3 Mutation Testing (Zwei Teilen)
+Ich habe Antigravity weiter benutzt, um MutPy in the .venv zu installieren 
+
+## Mit MutPy gab es 11 überlebende Mutanten ohne kills:
+
+<img width="619" height="663" alt="grafik" src="https://github.com/user-attachments/assets/140a28a5-457c-4a2f-a76b-5233475b2450" />
+
+## Die erste Vier überlebende:
+
+<img width="1795" height="361" alt="grafik" src="https://github.com/user-attachments/assets/2c69fc4a-c004-4b9f-aa4a-d78ab564778f" />
+
+
+
+
+# A3 MUtation Testing nur mit AI
+
+Ich habe diese Aufgabe so zuerst gemacht, wiel ich die Frameworks vergessen habe. Dabei habe ich aber was über die KI gelernt.
+
+## Da der Kontext schon da ist, konnte der Prompt kurz sein:
+
+<img width="576" height="90" alt="grafik" src="https://github.com/user-attachments/assets/a3fd1eab-8aa4-48fa-b45c-abd22fa929ff" />
+
+## Das Code ist nach Kurzem da
+
+<img width="1348" height="835" alt="grafik" src="https://github.com/user-attachments/assets/23213e6f-518b-4bc8-ba5b-a587eff3945e" />
+
+## Zuerst wird die Baseline überprüft und dann kommen die Mutanten:
+
+<img width="1236" height="681" alt="grafik" src="https://github.com/user-attachments/assets/a9086281-c196-4ce0-92be-a739fd463cd9" />
+
+## Die Mutaten wurden besiegt (Darwin und die Evolution trauern...)
+
+<img width="1162" height="445" alt="grafik" src="https://github.com/user-attachments/assets/0db972ae-6a2e-4f92-92a0-5f8ba5d2b36e" />
+<img width="1297" height="453" alt="grafik" src="https://github.com/user-attachments/assets/a48f68ca-a122-4e6c-b8e9-e1e4478a01b9" />
+
+## Da alle überlebt haben, musste ich noch einen Prompt eingeben:
+
+<img width="676" height="76" alt="grafik" src="https://github.com/user-attachments/assets/c7c53b0f-43db-4500-9108-c3a3c24df883" />
+
+## Die neue Mutanten habenn alle Überlebt:
+
+Diese Ergebnisse zeigen deutlich auf, dass die KI beim Testen nicht um die Ecken denken kann. Sie hat die ersten Mutaten in Bezug auf die vorherigen Assertions gebaut.
+Die zweite Mutantengruppe orientierte sich "gezielt" auf den ungetesteten Teil der Klasse, daher könnten Sie alle überleben.
+
+<img width="1437" height="538" alt="grafik" src="https://github.com/user-attachments/assets/8a65262f-d28b-4091-b7bf-7a63817bf433" />
+
+
+
+
+
+
+
+
+
+
