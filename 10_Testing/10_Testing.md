@@ -65,11 +65,34 @@ Ich habe Antigravity weiter benutzt, um MutPy in the .venv zu installieren
 
 ## Mit MutPy gab es 11 überlebende Mutanten ohne kills:
 
+Hier muss man erwähnen, dass die Überlebende zu dem Code gehören, die nicht mut testen versehen war. 
+
 <img width="619" height="663" alt="grafik" src="https://github.com/user-attachments/assets/140a28a5-457c-4a2f-a76b-5233475b2450" />
 
 ## Die erste Vier überlebende:
 
 <img width="1795" height="361" alt="grafik" src="https://github.com/user-attachments/assets/2c69fc4a-c004-4b9f-aa4a-d78ab564778f" />
+
+## 1 und 2 Assignment Operator replacement
+
+Hier wurde den Werten mit "-" oder null mutiert:
+
+<img width="1512" height="126" alt="grafik" src="https://github.com/user-attachments/assets/fd44696c-712f-43df-9b26-073fc27d5999" />
+
+<img width="1624" height="183" alt="grafik" src="https://github.com/user-attachments/assets/06136716-ba22-44b1-8590-a56a78709551" />
+
+## 9 und 10 gehären aber zum Code mit Testen
+Hier handelt es sich um "incompetent" Mutante, also Mutaten, die die funktionalität des Programms nicht änderten. Aber hier hendelt sich eher um eine schwieriger Fall, denn Antigravity zufolge wurden diese als incompentet bezeichnet, weil bei dem exception handling, die hier doch getestet wurde, MutPy gecrasht hat. 
+
+<img width="1674" height="250" alt="grafik" src="https://github.com/user-attachments/assets/b2e68b9c-2f1b-4303-b2df-2bc9091991ba" />
+
+Aber nach weitere Fragen und Versuchen, kann es sein, dass es sich um eine Kompatibilität Problem mit der Ausnahmen handelt:
+
+<img width="829" height="327" alt="grafik" src="https://github.com/user-attachments/assets/63de3811-4bfa-45d3-9224-a2c523cd5d50" />
+
+## Für diese spezifische Mutant wäre weitere Debbuging und testen notwendig....
+
+
 
 
 
