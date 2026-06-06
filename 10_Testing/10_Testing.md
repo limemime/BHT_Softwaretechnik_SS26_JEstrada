@@ -28,7 +28,7 @@ Die Hauptfunktionen sind eine engine, das ein Wörterbuch auflädt und die Suche
 
 <img width="1227" height="607" alt="grafik" src="https://github.com/user-attachments/assets/cb136687-210e-43e6-b9a9-4ed035944255" />
 
-## Wie in Punkt 4 hingedeutet wurded im Testing eine AUsnahme eingebaut:
+## Wie in Punkt 4 hingedeutet wurded im Testing eine Ausnahme eingebaut:
 
 <img width="1065" height="339" alt="grafik" src="https://github.com/user-attachments/assets/937fddf8-7d72-4e19-a058-1e26ff15324e" />
 
