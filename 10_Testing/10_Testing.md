@@ -61,6 +61,11 @@ Die Date von der test und Programm sind im Unterordner hinzugefügt.
 
 <img width="1101" height="715" alt="grafik" src="https://github.com/user-attachments/assets/f8ef6318-286a-462a-81ed-5661c039ae1d" />
 
+## Erste Grün:
+
+<img width="1123" height="262" alt="grafik" src="https://github.com/user-attachments/assets/bd0446f8-6348-4e43-a2b3-b1f8d5976e7a" />
+
+
 
 
 
