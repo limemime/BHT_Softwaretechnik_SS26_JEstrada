@@ -110,6 +110,10 @@ Daher habe ich einen neue promtp gegeben, um zu sagen, dass es geht um eine test
 
  <img width="1045" height="835" alt="grafik" src="https://github.com/user-attachments/assets/35b38e5b-b079-444f-9227-96cb5552a65a" />
 
+## Schlussbemerkungen
+
+Mit der minimalen und schrittweisen Implementierung kann man sogar mit KI-Unterstützung einen Überblick über den Code gewinnen. So ist es einfacher, eine Klasse zu bauen, denn man fängt von dem Namen an und die Funktionen werden langsam implementiert. Während des Prozesses verfeinert man auch die Architektur des Projekts. Das kann man im Rot 3 genau sehen. Da ging es nicht um eine gleiche Funktion mehrmals aufzurufen, sondern um eine Funktion für das Hinzufügen einer ganzen Liste von Items. Hier könnte man überlegen, ob eine der zwei Funktionen überflüssig ist und sich für eine entscheiden. Refactoring ist auch einfacher, wenn man sich an einem Test orientiert und genau sieht, was man im Moment braucht. Das Refactoring bezieht sich in dieser Aufgabe auf List Comprehension vs. Loop.   
+
 
 
 
