@@ -2,7 +2,8 @@
 
 Für diese Aufgabe und die Aufgabe 3 habe ich mich entschieden, das Projekt von der Vibe-Coding-ESA/Präsenz zu benutzen.
 In diesem Projekt habe ich einen Programm "gevibet", das randomisierte Suchen in Google macht, um jegliche Profiling zu erschweren.
-Die Hauptfunktionen sind eine engine, das ein Wörterbuch auflädt und die Suchen in eine einstellbare Zeitspanne ausführt. 
+Die Hauptfunktionen sind eine Engine, das ein Wörterbuch auflädt und die Suchen in eine einstellbare Zeitspanne ausführt.
+Die vond er KI konzipierten testen haben sich auf Assertions konzentriert, aber die Schlusselfunktionen wurden mit Mock-Objekten getestet.
 
 ## Die KI hat trotz meines Tippfehlers, das Prompt verstanden. I habe mich nur auf einen Funktion konzentriert:
 
@@ -30,7 +31,8 @@ Die Hauptfunktionen sind eine engine, das ein Wörterbuch auflädt und die Suche
 
 ## Wie in Punkt 4 hingedeutet wurded im Testing eine Ausnahme eingebaut:
 
-<img width="1065" height="339" alt="grafik" src="https://github.com/user-attachments/assets/937fddf8-7d72-4e19-a058-1e26ff15324e" />
+<img width="1027" height="333" alt="grafik" src="https://github.com/user-attachments/assets/79cc6310-a9b3-4bc8-8a1e-fea39d81f20f" />
+
 
 ## Diese Testen mit KI unterstützung ist enfiach,
 aber mir es kann gut sein, dass die KI nicht sofort an die Grenzfälle oder auf abwegige Fälle kommt.
