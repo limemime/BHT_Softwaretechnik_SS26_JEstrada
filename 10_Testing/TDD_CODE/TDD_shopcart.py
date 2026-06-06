@@ -1,5 +1,12 @@
 import unittest
 
+class ShoppingCart:
+    def __init__(self):
+        self.items = []
+
+    def get_total(self):
+        return 0
+
 class TestShoppingCart(unittest.TestCase):
     def test_empty_cart_has_zero_total(self):
         cart = ShoppingCart()
