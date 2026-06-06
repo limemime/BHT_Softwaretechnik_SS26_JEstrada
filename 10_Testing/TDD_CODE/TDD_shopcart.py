@@ -8,6 +8,10 @@ class ShoppingCart:
         self.items.append((name, price))
         print(f"Items in cart: {self.items}")
 
+    def add_items(self, item_list):
+        self.items.extend(item_list)
+        print(f"Items in cart: {self.items}")
+
     def get_total(self):
         return sum(item[1] for item in self.items)
 
