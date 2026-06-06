@@ -12,5 +12,10 @@ class TestShoppingCart(unittest.TestCase):
         cart = ShoppingCart()
         self.assertEqual(cart.get_total(), 0)
 
+    def test_add_item_increase_total(self):
+        cart = ShoppingCart()
+        cart.add_item("Apple", 1.5)
+        self.assertEqual(cart.get_total(), 1.5)
+
 if __name__ == "__main__":
     unittest.main()
