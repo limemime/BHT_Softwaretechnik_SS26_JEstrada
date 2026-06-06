@@ -4,8 +4,12 @@ class ShoppingCart:
     def __init__(self):
         self.items = []
 
+    def add_item(self, name, price):
+        self.items.append((name, price))
+        print(f"Items in cart: {self.items}")
+
     def get_total(self):
-        return 0
+        return sum(item[1] for item in self.items)
 
 class TestShoppingCart(unittest.TestCase):
     def test_empty_cart_has_zero_total(self):
