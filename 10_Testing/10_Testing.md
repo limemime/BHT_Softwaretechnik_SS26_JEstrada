@@ -65,6 +65,11 @@ Die Date von der test und Programm sind im Unterordner hinzugefügt.
 
 <img width="1123" height="262" alt="grafik" src="https://github.com/user-attachments/assets/bd0446f8-6348-4e43-a2b3-b1f8d5976e7a" />
 
+## 2. Rot
+
+<img width="1084" height="823" alt="grafik" src="https://github.com/user-attachments/assets/82b6ecf1-b6e1-4b86-95a7-15525556e04c" />
+
+
 
 
 
