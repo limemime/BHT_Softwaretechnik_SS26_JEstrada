@@ -93,7 +93,25 @@ Daher habe ich einen neue promtp gegeben, um zu sagen, dass es geht um eine test
 
 ## 4. Grün
 
+### Genauseo wie in 2 Grün, gibt es hier auch eine List comprenhension. DieseImplementierung hat im Vergleich zu einer Schleife eine einfachere Syntax und mach das code übersichtlicher.
+
 <img width="1087" height="706" alt="grafik" src="https://github.com/user-attachments/assets/4f569c0a-9325-4181-a6ef-343f2858f4e7" />
+
+## 5. Rot
+
+<img width="1077" height="796" alt="grafik" src="https://github.com/user-attachments/assets/9aea805b-7443-41f3-9f91-8f07b695dc3d" />
+
+## 5. Grün
+ ### Zuerst wurde remove() vorgeschlagen, genauso wie beim vorherigen rot
+
+ <img width="1077" height="796" alt="grafik" src="https://github.com/user-attachments/assets/d0c043b7-0c7f-4e86-8902-9ff794cd7725" />
+
+ ### aber pop ist besser, weil man pop() das gelöschte Item zurückgibt. Das kann praktischer sein.
+
+ <img width="1045" height="835" alt="grafik" src="https://github.com/user-attachments/assets/35b38e5b-b079-444f-9227-96cb5552a65a" />
+
+
+
 
 
 
