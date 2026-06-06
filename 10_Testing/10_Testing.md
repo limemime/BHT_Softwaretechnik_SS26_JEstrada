@@ -51,16 +51,14 @@ Ich habe noch ein prompt eingegeben, um diese Vermutung zu testen.
 ## Aber die Ki hat sie sofort repariert und verbessert.
 Die Date von der test und Programm sind im Unterordner hinzugefügt. 
 
-
-
-
-
-
-
-
-
-
 # A2 TDD
+
+## Ich habe in Gemini den ganezn Kontext und Aufgaben von Anfang an erklärt:
+
+<img width="1123" height="766" alt="grafik" src="https://github.com/user-attachments/assets/ea0e6656-2a8c-4bc8-b167-cbff346bcf35" />
+
+
+
 
 # A3 Mutation Testing (Zwei Teilen)
 Ich habe Antigravity weiter benutzt, um MutPy in the .venv zu installieren 
