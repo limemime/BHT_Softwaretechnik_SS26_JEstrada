@@ -15,6 +15,9 @@ class ShoppingCart:
     def get_total(self):
         return sum(item[1] for item in self.items)
 
+    def get_quantity(self, name):
+        return sum(1 for item in self.items if item[0] == name)
+
 class TestShoppingCart(unittest.TestCase):
     def test_empty_cart_has_zero_total(self):
         cart = ShoppingCart()
