@@ -30,5 +30,12 @@ class TestShoppingCart(unittest.TestCase):
         cart.add_items([("Apple", 1.5), ("Banana", 2.0), ("Orange", 3.0)])
         self.assertEqual(cart.get_total(), 6.5)
 
+    def test_get_quantity_of_item(self):
+        cart = ShoppingCart()
+        cart.add_items([("Apple", 1.5), ("Apple", 1.5), ("Banana", 2.0)])
+        self.assertEqual(cart.get_quantity("Apple"), 2)
+        self.assertEqual(cart.get_quantity("Banana"), 1)
+        self.assertEqual(cart.get_quantity("Orange"), 0)
+
 if __name__ == "__main__":
     unittest.main()
