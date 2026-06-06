@@ -21,5 +21,10 @@ class TestShoppingCart(unittest.TestCase):
         cart.add_item("Apple", 1.5)
         self.assertEqual(cart.get_total(), 1.5)
 
+    def test_add_multiple_items_sums_total(self):
+        cart = ShoppingCart()
+        cart.add_items([("Apple", 1.5), ("Banana", 2.0), ("Orange", 3.0)])
+        self.assertEqual(cart.get_total(), 6.5)
+
 if __name__ == "__main__":
     unittest.main()
