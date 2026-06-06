@@ -69,6 +69,39 @@ Die Date von der test und Programm sind im Unterordner hinzugefügt.
 
 <img width="1084" height="823" alt="grafik" src="https://github.com/user-attachments/assets/82b6ecf1-b6e1-4b86-95a7-15525556e04c" />
 
+## 2. Grün
+
+<img width="1105" height="735" alt="grafik" src="https://github.com/user-attachments/assets/63154250-197f-479a-ab9c-b250e0e01cac" />
+
+## 3. Rot
+Diese war auch erfolgreich, da die FUnktion ist ganz trivial. Es geht nur um addieren.
+
+<img width="1111" height="636" alt="grafik" src="https://github.com/user-attachments/assets/61136393-3df7-45f3-86b8-fbd5b43b69f6" />
+
+## 3.' Rot
+
+Daher habe ich einen neue promtp gegeben, um zu sagen, dass es geht um eine test, in dem mehere item gleichzeitig eingegeben werden.
+
+<img width="1113" height="723" alt="grafik" src="https://github.com/user-attachments/assets/3f6e025f-c86d-4b05-a3a1-da75bb1c6469" />
+
+## 3. Grün
+<img width="1114" height="697" alt="grafik" src="https://github.com/user-attachments/assets/6151af93-eadf-43d4-a622-3b53c93ff9a2" />
+
+## 4. Rot
+
+<img width="1114" height="820" alt="grafik" src="https://github.com/user-attachments/assets/c01af97b-3ef1-49cf-906b-a20c119070bc" />
+
+## 4. Grün
+
+<img width="1087" height="706" alt="grafik" src="https://github.com/user-attachments/assets/4f569c0a-9325-4181-a6ef-343f2858f4e7" />
+
+
+
+
+
+
+
+
 
 
 
