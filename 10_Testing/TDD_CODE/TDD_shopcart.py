@@ -18,6 +18,13 @@ class ShoppingCart:
     def get_quantity(self, name):
         return sum(1 for item in self.items if item[0] == name)
 
+    def remove_item(self, name):
+        for i, item in enumerate(self.items):
+            if item[0] == name:
+                self.items.pop(i)
+                break
+        print(f"Items in cart after removal: {self.items}")
+
 class TestShoppingCart(unittest.TestCase):
     def test_empty_cart_has_zero_total(self):
         cart = ShoppingCart()
