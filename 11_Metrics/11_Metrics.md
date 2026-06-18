@@ -1,6 +1,6 @@
 # 11 Metrics
 
-Für diese Aufgabe habe ich das Code von der Vibe Coding Aufgabe verdente. Diese Entropy-Engine, das willkürliche Suchen im Web macht, funktioniert:
+Für diese Aufgabe habe ich das Code von der Vibe Coding Aufgabe verwendet. Das Entropy-Engine, das willkürliche Suchen im Web macht, funktioniert:
 
 <img width="1768" height="943" alt="grafik" src="https://github.com/user-attachments/assets/2098f2b8-7a8c-47a2-87a5-4352fbdb8c60" />
 
@@ -21,7 +21,7 @@ Wichtiger sind die Problemme mit den Imports (webdriver.Chrome) und auch das "Fa
 
 <img width="1375" height="718" alt="grafik" src="https://github.com/user-attachments/assets/b43792ec-8dff-4459-b36e-895e2c038340" />
 
-Damit pylint ein Note gibt, muss man es in dem Terminal ausführen. Vorher muss man abe pylint in der .venv mit pip installieren und danach: 
+Damit pylint ein Note gibt, muss man es in dem Terminal ausführen. Vorher muss man aber pylint in der .venv mit pip installieren und danach: 
 
 <img width="1153" height="679" alt="grafik" src="https://github.com/user-attachments/assets/1a569743-301f-4611-ae30-a736b974c742" />
 
@@ -53,6 +53,35 @@ Der erste Versuch hat gescheitert, weil ich der Server nicht angemacht habe:
 Dafür bracht man Docker oder Docker Desktop.
 
 docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
+
+<img width="1456" height="421" alt="grafik" src="https://github.com/user-attachments/assets/35dd4b5d-a255-4f62-b55d-8011cb6c34b0" />
+
+<img width="1113" height="805" alt="grafik" src="https://github.com/user-attachments/assets/093a8bdd-a96b-49b8-9b90-72a1ebdb2d2e" />
+
+Und noch ein Problem und zwar, die Berechtigungen fehlen:
+
+<img width="1692" height="307" alt="grafik" src="https://github.com/user-attachments/assets/13ea2e9b-f385-45a2-8495-0d890c836d9a" />
+
+Die Test war erfolgreich, aber mit 58 Sicherheitsprobleme bestanden:
+
+<img width="1630" height="756" alt="grafik" src="https://github.com/user-attachments/assets/07384de6-f15e-4619-812b-9057b387e894" />
+
+Diese Ergebnise umfassne auch die .venv und Mutantentest, daher muss man sich nur auf das code fokussieren mit:
+
+sonar-scanner -Dsonar.token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -Dsonar.inclusions=app.py,engine.py
+
+Die Ergebnisse beschränken sich nur auf relevantes Code:
+
+<img width="1351" height="532" alt="grafik" src="https://github.com/user-attachments/assets/2e5d2ab1-7c78-44ea-8af5-e73e991f53eb" />
+
+Die gefundene Probleme entsprechen dem Scan von der IDE Extension:
+
+<img width="1663" height="712" alt="grafik" src="https://github.com/user-attachments/assets/62c9c796-5a91-443a-b0c7-007ce81db96a" />
+
+
+
+
+
 
 
 
