@@ -78,7 +78,7 @@ Die gefundene Probleme entsprechen dem Scan von der IDE Extension:
 
 <img width="1663" height="712" alt="grafik" src="https://github.com/user-attachments/assets/62c9c796-5a91-443a-b0c7-007ce81db96a" />
 
-## Schließlich lässt sich sagen, dass diese Tools für Debbuging sehr hilfreich sind. Hiermit kann man die Probleme schnell entdecken und, da diese Probleme auch kategorisiert sind, eine Lössung auch schnell finden. Das Dashboard von SonarQube ist eine mächtige Tool, denn man kriegto sofort einen Überblich über das ganze Code. 
+## Schließlich lässt sich sagen, dass diese Tools für Debbuging sehr hilfreich sind. Hiermit kann man die Probleme schnell entdecken und, da diese Probleme auch kategorisiert werden, eine Lösung auch schnell finden. Das Dashboard von SonarQube ist eine mächtige Tool, denn man kriegt sofort einen Überblick über das ganze Code. 
 
 
 
