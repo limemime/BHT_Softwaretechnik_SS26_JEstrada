@@ -20,4 +20,9 @@ Wie im Zustandsdiagramm zu sehen ist, stellt eine Schleife die Hauptfunktionalit
 
 Engine, Datenbank und Dashboard sind unabhängig voneinander. Daher lässt sich behaupten, dass aus dieser panoramischen Perspektive das Projekt ein **Model-View-Controller-Design** hat.  
 Dieses Projekt wurde für die ESA Vibe Coding in zwei Versionen entwickelt und dabei verschieden **Frameworks** wurden benutzt. Eine Version wurde mit Gemini erstellt und greift auf die Standardpythonbibliothek und Flask zurück. Die andere Version benutzt Tkinter für die GUI, Selenium Webdriver für die Suche im Hintergrund und unittest und mutmut für die Tests.  
-Mit den zwei letzten **Test-Frameworks** kann man die Qualität des Codes gewährleisten. Für die Metrics kann man sich immer auf pylint oder SonarQube stützen. Für dieses Projekt würde ich auf die lockere Kopplung achten. Diese Prinzip ist die Eckstein für die Interkation zwischen Komponenten.
+Mit den zwei letzten **Test-Frameworks** kann man die Qualität des Codes gewährleisten. Für die Metrics kann man sich immer auf pylint oder SonarQube stützen. Für dieses Projekt würde ich auf die lockere Kopplung achten. Diese Prinzip ist die Eckstein für die Interkation zwischen Komponenten. So ist grundsätzlich die Architektur von IEE:
+
+<img width="988" height="351" alt="grafik" src="https://github.com/user-attachments/assets/ca73537a-4f18-4a8e-a63d-d3692221cd94" />
+
+## ARC-E2: Architecture Communication Canvas
+
