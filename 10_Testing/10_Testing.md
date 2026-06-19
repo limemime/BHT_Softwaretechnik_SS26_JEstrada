@@ -5,6 +5,8 @@ In diesem Projekt habe ich einen Programm "gevibet", das randomisierte Suchen in
 Die Hauptfunktionen sind eine Engine, das ein Wörterbuch auflädt und die Suchen in eine einstellbare Zeitspanne ausführt.
 Die vond er KI konzipierten testen haben sich auf Assertions konzentriert, aber die Schlusselfunktionen wurden mit Mock-Objekten getestet.
 
+### Für dies Aufgabe habe ich zuerst getestet, wie die KI Test entwickeln kann. Danach habe ich bekannte Frameworks benutzt.
+
 ## Die KI hat trotz meines Tippfehlers, das Prompt verstanden. I habe mich nur auf einen Funktion konzentriert:
 
 <img width="370" height="127" alt="grafik" src="https://github.com/user-attachments/assets/3e97b689-509c-4ef6-ade1-1a59a68eaea4" />
