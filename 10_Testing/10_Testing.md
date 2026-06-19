@@ -34,7 +34,7 @@ Die vond er KI konzipierten testen haben sich auf Assertions konzentriert, aber 
 <img width="1027" height="333" alt="grafik" src="https://github.com/user-attachments/assets/79cc6310-a9b3-4bc8-8a1e-fea39d81f20f" />
 
 
-## Diese Testen mit KI unterstützung ist enfiach,
+## Diese Testen mit KI unterstützung ist einfach,
 aber mir es kann gut sein, dass die KI nicht sofort an die Grenzfälle oder auf abwegige Fälle kommt.
 Ich habe noch ein prompt eingegeben, um diese Vermutung zu testen.
 
