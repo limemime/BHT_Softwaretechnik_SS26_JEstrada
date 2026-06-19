@@ -1,3 +1,4 @@
+
 # Sowftware-Architektur
 
 ## ARC-E1: Finale Architektur
@@ -26,3 +27,4 @@ Mit den zwei letzten **Test-Frameworks** kann man die Qualität des Codes gewäh
 
 ## ARC-E2: Architecture Communication Canvas
 
+<img width="2160" height="1530" alt="ArchitectureCommunicationCanvas-empty drawio" src="https://github.com/user-attachments/assets/7ccf905a-9b3e-4510-af14-4b0fa6783c9e" />
