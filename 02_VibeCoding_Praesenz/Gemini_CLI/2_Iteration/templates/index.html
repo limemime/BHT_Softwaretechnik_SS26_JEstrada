@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Entropy Engine</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #090b11 0%, #151821 100%);
+            --card-bg: rgba(22, 28, 45, 0.45);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent-primary: #00f2fe;
+            --accent-secondary: #4facfe;
+            --color-success: #00ff87;
+            --color-danger: #ff0844;
+            --font-main: 'Outfit', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+            --shadow-glow: 0 0 25px rgba(0, 242, 254, 0.25);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background: var(--bg-gradient);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism Container */
+        .app-container {
+            width: 100%;
+            max-width: 900px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            z-index: 1;
+        }
+
+        @media (min-width: 768px) {
+            .app-container {
+                grid-template-columns: 1.2fr 0.8fr;
+            }
+            .header-row {
+                grid-column: span 2;
+            }
+            .full-width {
+                grid-column: span 2;
+            }
+        }
+
+        /* Premium Header */
+        header {
+            text-align: center;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(120deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        /* Glass Card Base */
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(0, 242, 254, 0.25);
+        }
+
+        /* Section Headings */
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #ffffff;
+        }
+
+        h2 span.icon {
+            color: var(--accent-primary);
+        }
+
+        /* Start/Stop Button */
+        .toggle-btn-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            min-height: 200px;
+        }
+
+        .power-btn {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: none;
+            background: radial-gradient(circle, #1a2236 0%, #101524 100%);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.1);
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .power-btn::before {
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            right: -6px;
+            bottom: -6px;
+            border-radius: 50%;
+            border: 2px solid var(--card-border);
+            transition: all 0.3s;
+        }
+
+        .power-btn .power-icon {
+            width: 50px;
+            height: 50px;
+            fill: none;
+            stroke: var(--text-muted);
+            stroke-width: 4;
+            stroke-linecap: round;
+            transition: all 0.3s;
+        }
+
+        /* Active Running States */
+        .power-btn.running {
+            background: radial-gradient(circle, rgba(0, 255, 135, 0.2) 0%, rgba(10, 21, 20, 0.8) 100%);
+            box-shadow: 0 0 40px rgba(0, 255, 135, 0.3), inset 0 0 15px rgba(0, 255, 135, 0.2);
+        }
+
+        .power-btn.running::before {
+            border-color: var(--color-success);
+            animation: pulse-ring 2s infinite;
+        }
+
+        .power-btn.running .power-icon {
+            stroke: var(--color-success);
+            filter: drop-shadow(0 0 8px rgba(0, 255, 135, 0.8));
+        }
+
+        .power-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .power-btn:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(1.15); opacity: 0; }
+        }
+
+        .status-badge {
+            margin-top: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .status-badge.active {
+            color: var(--color-success);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--text-muted);
+        }
+
+        .status-badge.active .status-dot {
+            background-color: var(--color-success);
+            box-shadow: 0 0 10px var(--color-success);
+            animation: pulse-dot 1.5s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+
+        /* Countdown Progress Bar */
+        .progress-container {
+            width: 100%;
+            margin-top: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            height: 6px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+            border-radius: 10px;
+            transition: width 1s linear;
+        }
+
+        /* Metrics Display */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.25rem;
+        }
+
+        .metric-item {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.04);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .metric-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 800;
+            font-family: var(--font-mono);
+            color: #ffffff;
+            line-height: 1;
+        }
+
+        .metric-subtext {
+            font-size: 0.9rem;
+            font-family: var(--font-mono);
+            color: var(--accent-primary);
+            margin-top: 0.25rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Config Form Elements */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .form-group label span.val {
+            color: var(--accent-primary);
+            font-family: var(--font-mono);
+        }
+
+        /* Sleek Slider */
+        input[type="range"] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            outline: none;
+            transition: background 0.3s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--accent-primary);
+            box-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+            cursor: pointer;
+            transition: transform 0.1s, background-color 0.2s;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+            background: #ffffff;
+        }
+
+        /* Inputs & Buttons */
+        .input-group {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 0.75rem 1rem;
+            color: #ffffff;
+            font-family: var(--font-main);
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 10px rgba(0, 242, 254, 0.15);
+        }
+
+        .btn {
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: #0b0f19;
+            font-weight: 700;
+            border: none;
+            border-radius: 10px;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        /* List Items */
+        .item-list {
+            list-style: none;
+            max-height: 150px;
+            overflow-y: auto;
+            margin-top: 1rem;
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.15);
+            padding: 0.5rem;
+        }
+
+        .item-list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .item-list::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+        }
+
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            transition: background 0.2s;
+            margin-bottom: 0.25rem;
+        }
+
+        .list-item:hover {
+            background: rgba(255, 255, 255, 0.03);
+            color: #ffffff;
+        }
+
+        .list-item .remove-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0 0.25rem;
+            transition: color 0.2s;
+            line-height: 1;
+        }
+
+        .list-item .remove-btn:hover {
+            color: var(--color-danger);
+        }
+
+        /* Dictionary Tags Area */
+        .dictionary-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .tag-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            max-height: 250px;
+            overflow-y: auto;
+            padding: 0.75rem;
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        .tag-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .tag-container::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+        }
+
+        .word-tag {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-main);
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            transition: all 0.2s;
+        }
+
+        .word-tag:hover {
+            background: rgba(0, 242, 254, 0.1);
+            border-color: var(--accent-primary);
+        }
+
+        .word-tag .remove-tag {
+            cursor: pointer;
+            color: var(--text-muted);
+            font-weight: 800;
+            font-size: 0.95rem;
+            line-height: 1;
+            transition: color 0.2s;
+        }
+
+        .word-tag .remove-tag:hover {
+            color: var(--color-danger);
+        }
+
+        /* Toast Notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            right: -300px;
+            background: rgba(16, 21, 36, 0.95);
+            border-left: 4px solid var(--accent-primary);
+            border-top: 1px solid var(--card-border);
+            border-right: 1px solid var(--card-border);
+            border-bottom: 1px solid var(--card-border);
+            padding: 1rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            transition: right 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 999;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .toast.show {
+            right: 20px;
+        }
+
+        .toast.error {
+            border-left-color: var(--color-danger);
+        }
+
+        .search-badge {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .bg-google { background: rgba(66, 133, 244, 0.2); color: #4285f4; }
+        .bg-bing { background: rgba(0, 128, 128, 0.2); color: #008080; }
+        .bg-generic { background: rgba(0, 242, 254, 0.2); color: var(--accent-primary); }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Semantic Entropy Engine</h1>
+        <p>Dynamic Digital Identity Obfuscation Engine</p>
+    </header>
+
+    <div class="app-container">
+
+        <!-- Controller Card -->
+        <div class="glass-card">
+            <h2><span class="icon">⏻</span>Engine Controller</h2>
+            <div class="toggle-btn-container">
+                <button id="powerBtn" class="power-btn" onclick="toggleEngine()">
+                    <svg class="power-icon" viewBox="0 0 50 50">
+                        <path d="M25,5 L25,25 M12,12 A20,20 0 1,0 38,12" />
+                    </svg>
+                </button>
+                <div id="statusBadge" class="status-badge">
+                    <span class="status-dot"></span>
+                    <span id="statusText">Stopped</span>
+                </div>
+                <div class="progress-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metrics Card -->
+        <div class="glass-card">
+            <h2><span class="icon">📊</span>Session Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <div class="metric-label">Total Searches</div>
+                    <div id="searchCount" class="metric-value">0</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-label">Active Query Keyword</div>
+                    <div id="lastWord" class="metric-value" style="font-size: 1.4rem;">-</div>
+                </div>
+                <div class="metric-item">
+                    <div class="metric-label">Search Provider</div>
+                    <div id="engineLabel" class="metric-subtext">-</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Configuration Card -->
+        <div class="glass-card">
+            <h2><span class="icon">⚙️</span>Engine Configuration</h2>
+            
+            <div class="form-group">
+                <label>Min Pacing Interval: <span id="minPaceVal" class="val">7s</span></label>
+                <input type="range" id="minPaceSlider" min="2" max="60" value="7" oninput="updatePaceDisplay()">
+            </div>
+
+            <div class="form-group">
+                <label>Max Pacing Interval: <span id="maxPaceVal" class="val">30s</span></label>
+                <input type="range" id="maxPaceSlider" min="5" max="120" value="30" oninput="updatePaceDisplay()">
+            </div>
+
+            <div style="text-align: right; margin-top: -0.5rem; margin-bottom: 1.5rem;">
+                <button class="btn" onclick="savePaceSettings()">Apply Pacing</button>
+            </div>
+
+            <div class="form-group">
+                <label>Search Provider URLs</label>
+                <div class="input-group">
+                    <input type="text" id="newEngineInput" placeholder="https://domain.com/search?q=">
+                    <button class="btn" onclick="addSearchEngine()">Add</button>
+                </div>
+                <ul id="enginesList" class="item-list">
+                    <!-- Loaded dynamically -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dictionary Card -->
+        <div class="glass-card">
+            <div class="dictionary-header">
+                <h2><span class="icon">📖</span>Keyword Dictionary</h2>
+                <span id="wordsCountBadge" class="metric-value" style="font-size: 1rem; color: var(--accent-primary);">0 words</span>
+            </div>
+            
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="text" id="newWordInput" placeholder="Add custom keyword..." onkeydown="if(event.key === 'Enter') addWord()">
+                    <button class="btn" onclick="addWord()">Add</button>
+                </div>
+            </div>
+
+            <div id="dictionaryTags" class="tag-container">
+                <!-- Loaded dynamically -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast">
+        <span id="toastMsg">Configuration Updated</span>
+    </div>
+
+    <script>
+        let isRunning = false;
+        let lastPaceConfig = { min_pace: 7, max_pace: 30 };
+        let activeInterval = null;
+        let countdownTimer = null;
+        let timeRemaining = 0;
+        let totalDuration = 10;
+
+        // Toast Helper
+        function showToast(msg, isError = false) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.innerText = msg;
+            if (isError) {
+                toast.classList.add('error');
+            } else {
+                toast.classList.remove('error');
+            }
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Live Pace display update
+        function updatePaceDisplay() {
+            const minSlider = document.getElementById('minPaceSlider');
+            const maxSlider = document.getElementById('maxPaceSlider');
+            
+            let minVal = parseFloat(minSlider.value);
+            let maxVal = parseFloat(maxSlider.value);
+            
+            if (minVal > maxVal) {
+                // Keep max at least equal to min
+                maxSlider.value = minVal;
+                maxVal = minVal;
+            }
+            
+            document.getElementById('minPaceVal').innerText = minVal + 's';
+            document.getElementById('maxPaceVal').innerText = maxVal + 's';
+        }
+
+        // Fetch overall status
+        function fetchStatus() {
+            fetch('/status')
+                .then(res => res.json())
+                .then(data => {
+                    updateStatusUI(data);
+                })
+                .catch(err => console.error('Status fetch error:', err));
+        }
+
+        function updateStatusUI(data) {
+            const powerBtn = document.getElementById('powerBtn');
+            const statusBadge = document.getElementById('statusBadge');
+            const statusText = document.getElementById('statusText');
+            const searchCount = document.getElementById('searchCount');
+            const lastWordEl = document.getElementById('lastWord');
+            const engineLabel = document.getElementById('engineLabel');
+            const wordsCountBadge = document.getElementById('wordsCountBadge');
+
+            isRunning = data.status === 'Running';
+            searchCount.innerText = data.count;
+            lastWordEl.innerText = data.last_word || '-';
+            wordsCountBadge.innerText = data.words_count + ' words';
+
+            if (data.current_search_engine) {
+                let displayEngine = data.current_search_engine;
+                let badgeClass = 'bg-generic';
+                if (displayEngine.includes('google.com')) {
+                    displayEngine = 'Google';
+                    badgeClass = 'bg-google';
+                } else if (displayEngine.includes('bing.com')) {
+                    displayEngine = 'Bing';
+                    badgeClass = 'bg-bing';
+                }
+                engineLabel.innerHTML = `<span class="search-badge ${badgeClass}">${displayEngine}</span>`;
+            } else {
+                engineLabel.innerText = '-';
+            }
+
+            if (isRunning) {
+                powerBtn.classList.add('running');
+                statusBadge.classList.add('active');
+                statusText.innerText = 'Running';
+
+                // Sync pacing countdown
+                timeRemaining = parseFloat(data.time_remaining);
+                
+                // If it's a new countdown, or duration changed
+                const currentMin = parseFloat(data.config.min_pace);
+                const currentMax = parseFloat(data.config.max_pace);
+                
+                // Estimate total duration of this specific loop wait
+                if (timeRemaining > totalDuration) {
+                    totalDuration = timeRemaining;
+                } else if (totalDuration === 0 || timeRemaining <= 0.1) {
+                    totalDuration = (currentMin + currentMax) / 2; // approximation fallback
+                }
+
+                updateProgressBar();
+            } else {
+                powerBtn.classList.remove('running');
+                statusBadge.classList.remove('active');
+                statusText.innerText = 'Stopped';
+                
+                document.getElementById('progressBar').style.width = '0%';
+                timeRemaining = 0;
+            }
+
+            // Sync Slider configuration if it has changed from server and user is not dragging
+            const minSlider = document.getElementById('minPaceSlider');
+            const maxSlider = document.getElementById('maxPaceSlider');
+            
+            if (Math.abs(lastPaceConfig.min_pace - data.config.min_pace) > 0.01 || 
+                Math.abs(lastPaceConfig.max_pace - data.config.max_pace) > 0.01) {
+                
+                lastPaceConfig.min_pace = data.config.min_pace;
+                lastPaceConfig.max_pace = data.config.max_pace;
+                
+                minSlider.value = data.config.min_pace;
+                maxSlider.value = data.config.max_pace;
+                updatePaceDisplay();
+            }
+
+            // Render engines list (only if count doesn't match to prevent input interruption)
+            renderEnginesList(data.config.search_engines);
+        }
+
+        function updateProgressBar() {
+            if (!isRunning || timeRemaining <= 0) {
+                document.getElementById('progressBar').style.width = '0%';
+                return;
+            }
+            const percent = Math.min(100, Math.max(0, (timeRemaining / totalDuration) * 100));
+            // Invert so it counts down
+            document.getElementById('progressBar').style.width = (100 - percent) + '%';
+        }
+
+        // Countdown timer for smoother UI progress updates
+        function startCountdownTicker() {
+            if (countdownTimer) clearInterval(countdownTimer);
+            countdownTimer = setInterval(() => {
+                if (isRunning && timeRemaining > 0) {
+                    timeRemaining = Math.max(0, timeRemaining - 0.2);
+                    updateProgressBar();
+                }
+            }, 200);
+        }
+
+        // Render search engines
+        function renderEnginesList(engines) {
+            const listEl = document.getElementById('enginesList');
+            const currentItemCount = listEl.children.length;
+            if (currentItemCount === engines.length) return; // avoid re-rendering
+
+            listEl.innerHTML = '';
+            engines.forEach(url => {
+                const li = document.createElement('li');
+                li.className = 'list-item';
+                
+                let prettyUrl = url.replace('https://', '').replace('http://', '');
+                if (prettyUrl.length > 35) prettyUrl = prettyUrl.substring(0, 32) + '...';
+
+                li.innerHTML = `
+                    <span title="${url}">${prettyUrl}</span>
+                    <button class="remove-btn" onclick="removeSearchEngine('${url}')">×</button>
+                `;
+                listEl.appendChild(li);
+            });
+        }
+
+        // Toggle engine
+        function toggleEngine() {
+            fetch('/toggle', { method: 'POST' })
+                .then(res => res.json())
+                .then(data => {
+                    fetchStatus();
+                    showToast(data.status === 'Running' ? 'Entropy Engine Started' : 'Entropy Engine Stopped');
+                })
+                .catch(err => {
+                    console.error(err);
+                    showToast('Failed to toggle engine', true);
+                });
+        }
+
+        // Save Pace Settings
+        function savePaceSettings() {
+            const min = parseFloat(document.getElementById('minPaceSlider').value);
+            const max = parseFloat(document.getElementById('maxPaceSlider').value);
+
+            fetch('/config', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ min_pace: min, max_pace: max })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    showToast('Pacing configurations applied');
+                    fetchStatus();
+                } else {
+                    showToast('Failed to save configuration', true);
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                showToast('API communication error', true);
+            });
+        }
+
+        // Add Search Engine
+        function addSearchEngine() {
+            const input = document.getElementById('newEngineInput');
+            const url = input.value.trim();
+            if (!url) return;
+
+            // Get current list of engines from status UI cache if available, or fetch
+            fetch('/status')
+                .then(res => res.json())
+                .then(data => {
+                    let engines = data.config.search_engines;
+                    if (engines.includes(url)) {
+                        showToast('Search provider already exists', true);
+                        return;
+                    }
+                    engines.push(url);
+
+                    return fetch('/config', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ search_engines: engines })
+                    });
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        showToast('Search provider added');
+                        input.value = '';
+                        // Clear list child count to force re-render
+                        document.getElementById('enginesList').innerHTML = '';
+                        fetchStatus();
+                    }
+                })
+                .catch(err => console.error(err));
+        }
+
+        // Remove Search Engine
+        function removeSearchEngine(url) {
+            fetch('/status')
+                .then(res => res.json())
+                .then(data => {
+                    let engines = data.config.search_engines;
+                    engines = engines.filter(e => e !== url);
+
+                    return fetch('/config', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ search_engines: engines })
+                    });
+                })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        showToast('Search provider removed');
+                        document.getElementById('enginesList').innerHTML = '';
+                        fetchStatus();
+                    }
+                })
+                .catch(err => console.error(err));
+        }
+
+        // Fetch dictionary words
+        function fetchDictionary() {
+            fetch('/dictionary/words')
+                .then(res => res.json())
+                .then(data => {
+                    renderDictionaryTags(data.words);
+                })
+                .catch(err => console.error('Dictionary load error:', err));
+        }
+
+        // Render Dictionary Tags
+        function renderDictionaryTags(words) {
+            const container = document.getElementById('dictionaryTags');
+            container.innerHTML = '';
+            words.forEach(word => {
+                const tag = document.createElement('span');
+                tag.className = 'word-tag';
+                tag.innerHTML = `
+                    <span>${word}</span>
+                    <span class="remove-tag" onclick="deleteWord('${word}')">×</span>
+                `;
+                container.appendChild(tag);
+            });
+        }
+
+        // Add Word to Dictionary
+        function addWord() {
+            const input = document.getElementById('newWordInput');
+            const word = input.value.trim();
+            if (!word) return;
+
+            fetch('/dictionary/words', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ word: word })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    showToast(`Word "${word}" added`);
+                    input.value = '';
+                    fetchDictionary();
+                    fetchStatus();
+                } else {
+                    showToast(data.message || 'Error adding word', true);
+                }
+            })
+            .catch(err => console.error(err));
+        }
+
+        // Delete Word from Dictionary
+        function deleteWord(word) {
+            fetch('/dictionary/words', {
+                method: 'DELETE',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ word: word })
+            })
+            .then(res => res.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    showToast(`Word "${word}" removed`);
+                    fetchDictionary();
+                    fetchStatus();
+                } else {
+                    showToast(data.message || 'Error removing word', true);
+                }
+            })
+            .catch(err => console.error(err));
+        }
+
+        // Initial setup
+        fetchStatus();
+        fetchDictionary();
+        startCountdownTicker();
+
+        // Status polling every 2.5 seconds
+        setInterval(fetchStatus, 2500);
+
+    </script>
+</body>
+</html>
