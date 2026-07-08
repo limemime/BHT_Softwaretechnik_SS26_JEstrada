@@ -76,6 +76,11 @@ Und die CLI Gemini wartet und macht fragen:
 
 Der große Unterschied hier ist, dass diese Version keine neue Tab für die Suche öffnet, sondern im Hintergrund läuft. 
 
+## Gemini CLI 2 Iteration (ersetzt durch Antigravity CLI)
+
+<img width="880" height="463" alt="grafik" src="https://github.com/user-attachments/assets/96193c5d-c6e7-4dc5-83c2-b418a85324fb" />
+
+
 
 
 
