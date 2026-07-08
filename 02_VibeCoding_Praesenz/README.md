@@ -88,7 +88,7 @@ Die Struktur ist diese:
 
 <img width="1867" height="549" alt="grafik" src="https://github.com/user-attachments/assets/95fda30f-b51a-4944-86a7-c0b8cfdbbb6e" />
 
-Das Programm funktioniert und sieht so aus:
+Das Programm funktioniert. Das Dashboard wird aufgerufen mit http://127.0.0.1:5000/ und sieht so aus:
 
 <img width="1261" height="799" alt="grafik" src="https://github.com/user-attachments/assets/e759be53-1e9c-4bf6-bb8b-06bbc456e798" />
 
