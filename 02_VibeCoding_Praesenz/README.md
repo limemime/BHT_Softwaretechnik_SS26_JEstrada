@@ -1,6 +1,6 @@
-Aufgaben 
+# Aufgaben 
 
----------------a) Create / Vibe a GUI for a proejct idea------------------------
+## ---------------a) Create / Vibe a GUI for a proejct idea------------------------
 
 Ich habe Google Stitch benutzt. Meine Idee war, eine App zu entwickeln, die die individuellen Daten und Privatsphäre schützt, indem es Google oder Amazon erschwert, ein Charakterprofil aus Internetsuchen zu erstellen. Es handelt sich um eine Art Brute-Force-Poisoning. Mein Prompt war Folgendes:
 
@@ -14,7 +14,7 @@ Und ein Teil das code ist: <img width="1580" height="616" alt="grafik" src="http
 
 
 
------------------b) Vibe a bigger / Mid-size project:-------------------
+## -----------------b) Vibe a bigger / Mid-size project:-------------------
 
 Ich habe das gleiche Projekt benutzt, aber diesmal habe ich in der Prompt weitere Details und Kernfunktionen hinzugefügt. Für diese Aufgabe habe ich Lovable benutzt und der Prompt ist Folgendes:
 
@@ -30,23 +30,39 @@ Eine kleine Screenshot vom code:
 <img width="1110" height="569" alt="grafik" src="https://github.com/user-attachments/assets/6717440b-6c27-4056-bc7e-09c1dee9428d" />
 
 
---------------c) Developing a bigger distributed app. Using CLI and A Vsisual Studio Code clone. --------------------
+## --------------c) Developing a bigger distributed app. Using CLI and A Vsisual Studio Code clone. --------------------
 
-Für diese Aufgabe habe ich zwei AI Tools benuntzt und zwei Programm erstellt. Ich habe auch mein Prompt weiter detailliert und dies hinzugefügt: "Bearing all the previous specifications in mind, I want to start with a prototype that has only the core functionality: an engine that looks for arbitrary words in a dictionary with 100 different key words and then uses them to send searches according to the abovementioned pace. You can propose a dictionary with 100 entries to search in a .txt file. This code should be as minimalistic as possible"
+Für diese Aufgabe habe ich zwei AI Tools benuntzt und zwei Programme erstellt. Ich habe auch mein Prompt weiter detailliert und dies hinzugefügt: "Bearing all the previous specifications in mind, I want to start with a prototype that has only the core functionality: an engine that looks for arbitrary words in a dictionary with 100 different key words and then uses them to send searches according to the abovementioned pace. You can propose a dictionary with 100 entries to search in a .txt file. This code should be as minimalistic as possible"
 
 Wichtig hier ist, dass **beide Programme eine verteilte Logik folgen**. Und es gibt zwei Interationen: Zuerst besteht das Program aus einer "Engine", die die randomisierte Anfragen erstellt, und der APP, die sich mit dem Web Server und der GUI beschäftigt. In der Zweite Iteration habe ich diese zwei Komponente wieter aufgeteilt.  
 
-Sowohl das Programm von Antigravit (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Antigravity) als auch das Programm aus Gemini CLI (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Gemini_CLI) sind in Unterordner und können ausgeführt werden. Eine Verbesserung wäere, wenn die Suchen immer im gliechen tab ausgeführt werden könnten. Das ist für die nächste Iteration. 
-
+Sowohl das Programm von Antigravity (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Antigravity) als auch das Programm aus Gemini CLI (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Gemini_CLI) sind in Unterordner und jede Iteration kann ausgeführt werden. Eine Verbesserung wäre, wenn die Suchen immer im gliechen tab ausgeführt werden könnten. Das ist für die nächste Iterationen. 
+### 1 Iteration
 In Antigravity bekommt man mehrere Review-Fragen, bevor das Code geschrieben wird.  
 
 <img width="1510" height="659" alt="grafik" src="https://github.com/user-attachments/assets/09941ad4-f5b2-4b14-bd69-24962a16de2f" />
 
-und ein plan: 
+und ein Plan:
+
 <img width="800" height="451" alt="grafik" src="https://github.com/user-attachments/assets/d80f6913-929c-498b-bb3d-8efd4b82aa09" />
 
 Damit ich das ganze Code verstehen kann, habe ich auch die KI nach Kommentare gefragt. Jede Linie wird erklärt:
+
 <img width="730" height="408" alt="grafik" src="https://github.com/user-attachments/assets/4a66cb5d-5a11-4dcc-804e-994f2c38ffa9" />
+
+### 2 Iteration
+
+Der Prompt und Antwort für die zweite Iteration waren folgendes:
+
+<img width="1045" height="667" alt="grafik" src="https://github.com/user-attachments/assets/ddb5862e-cc49-483f-9c50-e65a0e3b8241" />
+
+Die neue Strukttur des Projekts sowie eine Run Test sind hier zu sehen:
+
+<img width="1201" height="868" alt="grafik" src="https://github.com/user-attachments/assets/d6622243-c34f-44e8-a683-d5c8a3012f51" />
+
+
+
+
 
 
 Die variante mit Gemini CLI wird mit Screenshots dargestellt:
