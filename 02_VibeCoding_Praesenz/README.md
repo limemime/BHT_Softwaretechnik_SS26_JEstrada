@@ -80,6 +80,11 @@ Der große Unterschied hier ist, dass diese Version keine neue Tab für die Such
 
 <img width="880" height="463" alt="grafik" src="https://github.com/user-attachments/assets/96193c5d-c6e7-4dc5-83c2-b418a85324fb" />
 
+Hier ist bemerkenswert, dass die CLI Version eine detaillierte Implementationsplan in eienr md Datei erstellte:
+
+<img width="1594" height="517" alt="grafik" src="https://github.com/user-attachments/assets/28ac2267-5dc5-4c9f-883a-f6ec48219754" />
+
+
 
 
 
