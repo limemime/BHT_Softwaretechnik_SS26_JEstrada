@@ -34,7 +34,7 @@ Eine kleine Screenshot vom code:
 
 Für diese Aufgabe habe ich zwei AI Tools benuntzt und zwei Programm erstellt. Ich habe auch mein Prompt weiter detailliert und dies hinzugefügt: "Bearing all the previous specifications in mind, I want to start with a prototype that has only the core functionality: an engine that looks for arbitrary words in a dictionary with 100 different key words and then uses them to send searches according to the abovementioned pace. You can propose a dictionary with 100 entries to search in a .txt file. This code should be as minimalistic as possible"
 
-Wichtig hier ist, dass **beide Programme eine verteilte Logik folge**: Es gibt eine "Engine", die die randomisierte Anfragen erstellt, und die APP, die sich mit dem Web Server und der GUI beschäftigt.  
+Wichtig hier ist, dass **beide Programme eine verteilte Logik folgen**. Und es gibt zwei Interationen: Zuerst besteht das Program aus einer "Engine", die die randomisierte Anfragen erstellt, und der APP, die sich mit dem Web Server und der GUI beschäftigt. In der Zweite Iteration habe ich diese zwei Komponente wieter aufgeteilt.  
 
 Sowohl das Programm von Antigravit (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Antigravity) als auch das Programm aus Gemini CLI (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Gemini_CLI) sind in Unterordner und können ausgeführt werden. Eine Verbesserung wäere, wenn die Suchen immer im gliechen tab ausgeführt werden könnten. Das ist für die nächste Iteration. 
 
