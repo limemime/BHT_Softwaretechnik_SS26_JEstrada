@@ -34,10 +34,10 @@ Eine kleine Screenshot vom code:
 
 Für diese Aufgabe habe ich zwei AI Tools benuntzt und zwei Programme erstellt. Ich habe auch mein Prompt weiter detailliert und dies hinzugefügt: "Bearing all the previous specifications in mind, I want to start with a prototype that has only the core functionality: an engine that looks for arbitrary words in a dictionary with 100 different key words and then uses them to send searches according to the abovementioned pace. You can propose a dictionary with 100 entries to search in a .txt file. This code should be as minimalistic as possible"
 
-Wichtig hier ist, dass **beide Programme eine verteilte Logik folgen**. Und es gibt zwei Interationen: Zuerst besteht das Program aus einer "Engine", die die randomisierte Anfragen erstellt, und der APP, die sich mit dem Web Server und der GUI beschäftigt. In der Zweite Iteration habe ich diese zwei Komponente wieter aufgeteilt.  
+Wichtig hier ist, dass **beide Programme eine verteilte Logik folgen**. Und es gibt zwei Interationen für in Antigravity und nur eine Iteration in Gemini CLI, weil diese Google Projekt abgestrichen und durhc Antigravity CLI ersetzt wurde. In der ersten Iteration besteht das Program aus einer "Engine", die die randomisierte Anfragen erstellt, und der APP, die sich mit dem Web Server und der GUI beschäftigt. In der Zweite Iteration habe ich diese zwei Komponente wieter aufgeteilt.  
 
 Sowohl das Programm von Antigravity (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Antigravity) als auch das Programm aus Gemini CLI (https://github.com/limemime/BHT_Softwaretechnik_SS26_JEstrada/tree/main/02_VibeCoding_Praesenz/Gemini_CLI) sind in Unterordner und jede Iteration kann ausgeführt werden. Eine Verbesserung wäre, wenn die Suchen immer im gliechen tab ausgeführt werden könnten. Das ist für die nächste Iterationen. 
-### 1 Iteration
+### Antigravity 1 Iteration
 In Antigravity bekommt man mehrere Review-Fragen, bevor das Code geschrieben wird.  
 
 <img width="1510" height="659" alt="grafik" src="https://github.com/user-attachments/assets/09941ad4-f5b2-4b14-bd69-24962a16de2f" />
@@ -50,7 +50,7 @@ Damit ich das ganze Code verstehen kann, habe ich auch die KI nach Kommentare ge
 
 <img width="730" height="408" alt="grafik" src="https://github.com/user-attachments/assets/4a66cb5d-5a11-4dcc-804e-994f2c38ffa9" />
 
-### 2 Iteration
+### Antigravity 2 Iteration
 
 Der Prompt und Antwort für die zweite Iteration waren folgendes:
 
@@ -63,16 +63,20 @@ Die neue Strukttur des Projekts sowie eine Run Test sind hier zu sehen:
 
 
 
-
+### Gemini CLI 1 Iteration
 
 Die variante mit Gemini CLI wird mit Screenshots dargestellt:
 
 <img width="720" height="771" alt="grafik" src="https://github.com/user-attachments/assets/ce5a81ab-b701-408b-af14-581483d716f5" />
 
-Und die CLI Gemini pasuiert und macht fragen:
+Und die CLI Gemini wartet und macht fragen:
 <img width="664" height="618" alt="grafik" src="https://github.com/user-attachments/assets/c879ef7f-432f-4155-a82b-c2d29686a77f" />
 
 <img width="748" height="799" alt="grafik" src="https://github.com/user-attachments/assets/bc902259-178f-4723-b3e5-caf663e35c68" />
+
+Der große Unterschied hier ist, dass diese Version keine neue Tab für die Suche öffnet, sondern im Hintergrund läuft. 
+
+
 
 
 
